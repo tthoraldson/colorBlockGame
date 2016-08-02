@@ -19,13 +19,141 @@ footer {
 }
 
 /* CLASSES */
-main #rectangle {
-	width: 200px;
-	height: 200px;
-	background: red;
+.rectangle {
+	width: 100px;
+	height: 100px;
+	display: block;
 }
 
-/* IDs */
-main #11 {
+/* IDs  =====================================*/
+/* ROW 1 */
+#row1 {
+	float: left;
+}
+
+#box11 {
+	background-color: black;
+}
+
+#box12 {
 	
 }
+
+#box13 {
+	background-color: black;
+}
+
+#box14 {
+	
+}
+
+#box15 {
+	background-color: black;
+}
+
+
+/* ROW 2 */
+#row2 {
+	float: left;
+}
+#box21 {
+	
+}
+
+#box22 {
+	background-color: black;
+}
+
+#box23 {
+	
+}
+
+#box24 {
+	background-color: black;
+}
+
+#box25 {
+	
+}
+
+
+/* ROW 3 */
+#row3 {
+	float: left;
+}
+
+#box31 {
+	background-color: black;
+}
+
+#box32 {
+	
+}
+
+#box33 {
+	background-color: black;
+}
+
+#box34 {
+	
+}
+
+#box35 {
+	background-color: black;
+}
+
+
+/* ROW 4 */
+#row4 {
+	float: left;
+}
+
+#box41 {
+	
+}
+
+#box42 {
+	background-color: black;
+}
+
+#box43 {
+	
+}
+
+#box44 {
+	background-color: black;
+}
+
+#box45 {
+	
+}
+
+
+/* ROW 5 */
+#row5 {
+	float: left;
+}
+
+#box51 {
+	background-color: black;
+}
+
+#box52 {
+	
+}
+
+#box53 {
+	background-color: black;
+}
+
+#box54 {
+	
+}
+
+#box55 {
+	background-color: black;
+}
+
+
+
+
