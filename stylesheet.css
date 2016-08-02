@@ -10,8 +10,7 @@ header {
 }
 
 main {
-	height: 90%;
-	width: 100%
+	
 }
 
 footer {
@@ -20,8 +19,6 @@ footer {
 
 /* CLASSES */
 .rectangle {
-	width: 100px;
-	height: 100px;
 	display: block;
 }
 
@@ -29,6 +26,8 @@ footer {
 /* ROW 1 */
 #row1 {
 	float: left;
+	width: 20%;
+	height: 20%;
 }
 
 #box11 {
@@ -55,6 +54,8 @@ footer {
 /* ROW 2 */
 #row2 {
 	float: left;
+	width: 20%;
+	height: 100px;
 }
 #box21 {
 	
@@ -80,6 +81,8 @@ footer {
 /* ROW 3 */
 #row3 {
 	float: left;
+	width: 20%;
+	height: 20%;
 }
 
 #box31 {
@@ -106,6 +109,8 @@ footer {
 /* ROW 4 */
 #row4 {
 	float: left;
+	width: 20%;
+	height: 20%;
 }
 
 #box41 {
@@ -132,6 +137,8 @@ footer {
 /* ROW 5 */
 #row5 {
 	float: left;
+	width: 20%;
+	height: 20%;
 }
 
 #box51 {
@@ -153,7 +160,3 @@ footer {
 #box55 {
 	background-color: black;
 }
-
-
-
-
