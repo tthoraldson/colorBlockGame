@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+h1 {
+	font-size: 3em;	
+}
+
+/* SECTIONS */
+header {
+	background-color: green;
+}
+
+main {
+	height: 90%;
+	width: 100%
+}
+
+footer {
+	background-color: yellow;
+}
+
+/* CLASSES */
+main #rectangle {
+	width: 200px;
+	height: 200px;
+	background: red;
+}
+
+/* IDs */
+main #11 {
+	
+}
