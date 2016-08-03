@@ -5,6 +5,7 @@ $(document).ready(function(){
     var findThisBox = colorToFind(); // stores the correct box
     var findThisColor = eval(findThisBox) // stores the correct box's color
 
+
     $('#userFeedback').empty();
     $('#correctColorDisplay').empty();                // clears the correct color display
     $('#correctColorDisplay').append("Find This Color: ", findThisColor);  // adds the correct color to find
@@ -12,7 +13,6 @@ $(document).ready(function(){
     $('.rectangle').click(function(){   // reports if clicked DIV is correct
       var $clicked = $(this).attr('id');
       if ($clicked === findThisBox){    // if the user picks the correct color
-        console.log("You are correct!!");
         $('#userFeedback').empty();
         $('#userFeedback').append("You are Correct!");
       }
@@ -53,6 +53,7 @@ function shuffle(array) {
 // randomizes colors on the DOM
 function randomizeDIVColors() {
   var shuffeledColors = shuffle(colors);
+
   $('#box11').css('background-color', box11 = shuffeledColors[0]);
   $('#box12').css('background-color', box12 = shuffeledColors[1]);
   $('#box13').css('background-color', box13 = shuffeledColors[2]);
