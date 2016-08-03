@@ -1,10 +1,30 @@
 $(document).ready(function(){
   $('#randomize').click(function(){
     randomizeDIVColors();
-    var findThisColor = colorToFind();
-    console.log(colorToFind());
-    // $('#correctColorDisplay').empty();
-    // $('#correctColorDisplay').append(findThisColor);
+
+    var findThisBox = colorToFind(); // stores the correct box
+    var findThisColor = eval(findThisBox) // stores the correct box's color
+
+    $('#userFeedback').empty();
+    $('#correctColorDisplay').empty();                // clears the correct color display
+    $('#correctColorDisplay').append("Find This Color: ", findThisColor);  // adds the correct color to find
+
+    $('.rectangle').click(function(){   // reports if clicked DIV is correct
+      var $clicked = $(this).attr('id');
+      if ($clicked === findThisBox){    // if the user picks the correct color
+        console.log("You are correct!!");
+        $('#userFeedback').empty();
+        $('#userFeedback').append("You are Correct!");
+      }
+      else {                            // if the user picks the wrong color
+        var wrongResponses = ["nope!", "try again!", "incorrect!", "are you color blind??", "W R O N G", "not even close bruh"];
+        var randomWrongResponse = shuffle(wrongResponses);
+
+        $('#userFeedback').empty();
+        $('#userFeedback').append(randomWrongResponse[0]);
+      }
+    });
+
   });
 });
 
@@ -15,7 +35,7 @@ var box31; var box32; var box33; var box34; var box35;
 var box41; var box42; var box43; var box44; var box45;
 var box51; var box52; var box53; var box54; var box55;
 var colors = ["AliceBlue", "AntiqueWhite", "Aqua", "Aquamarine", "Azure", "Beige", "Bisque", "Black", "BlanchedAlmond", "Blue", "BlueViolet", "Brown", "BurlyWood", "CadetBlue", "Chartreuse", "Chocolate", "Coral", "CornflowerBlue", "Cornsilk", "Crimson", "Cyan", "DarkBlue", "DarkCyan", "DarkGoldenRod", "DarkGray", "DarkGreen", "DarkKhaki", "DarkMagenta", "DarkOliveGreen", "DarkOrange", "DarkOrchid", "DarkRed", "DarkSalmon", "DarkSeaGreen", "DarkSlateBlue", "DarkSlateGray", "DarkTurquoise", "DarkViolet", "DeepPink", "DeepSkyBlue", "DimGray", "DodgerBlue", "FireBrick", "FloralWhite", "ForestGreen", "Fuchsia", "Gainsboro", "GhostWhite", "Gold", "GoldenRod", "Gray", "Green", "GreenYellow", "HoneyDew", "HotPink", "IndianRed", "Indigo", "Ivory", "Khaki", "Lavender", "LavenderBlush", "LawnGreen", "LemonChiffon", "LightBlue", "LightCoral", "LightCyan", "LightGoldenRodYellow", "LightGray", "LightGreen", "LightPink", "LightSalmon", "LightSeaGreen", "LightSkyBlue", "LightSlateGray", "LightSteelBlue", "LightYellow", "Lime", "LimeGreen", "Linen", "Magenta", "Maroon", "MediumAquaMarine", "MediumBlue", "MediumOrchid", "MediumPurple", "MediumSeaGreen", "MediumSlateBlue", "MediumSpringGreen", "MediumTurquoise", "MediumVioletRed", "MidnightBlue", "MintCream", "MistyRose", "Moccasin", "NavajoWhite", "Navy", "OldLace", "Olive", "OliveDrab", "Orange", "OrangeRed", "Orchid", "PaleGoldenRod", "PaleGreen", "PaleTurquoise", "PaleVioletRed", "PapayaWhip", "PeachPuff", "Peru", "Pink", "Plum", "PowderBlue", "Purple", "RebeccaPurple", "Red", "RosyBrown", "RoyalBlue", "SaddleBrown", "Salmon", "SandyBrown", "SeaGreen", "SeaShell", "Sienna", "Silver", "SkyBlue", "SlateBlue", "SlateGray", "Snow", "SpringGreen", "SteelBlue", "Tan", "Teal", "Thistle", "Tomato", "Turquoise", "Violet", "Wheat", "White", "WhiteSmoke", "Yellow", "YellowGreen",];
-var boxes = [box11, box12, box13, box14, box15, box21, box22, box23, box24, box25, box31, box32, box33, box34, box35, box41, box42, box43, box44, box45, box51, box52, box53, box54, box55];
+var boxes = ["box11", "box12", "box13", "box14", "box15", "box21", "box22", "box23", "box24", "box25", "box31", "box32", "box33", "box34", "box35", "box41", "box42", "box43", "box44", "box45", "box51", "box52", "box53", "box54", "box55"];
 
 // function shuffles array order
 function shuffle(array) {
@@ -67,8 +87,6 @@ function randomizeDIVColors() {
 // picks a color to find from the colors displayed on the dom
 function colorToFind() {
   var tempArray = shuffle(boxes);
-  var correctColor = tempArray;
-  return boxes;
+  var correctColor = tempArray[0];
+  return correctColor;
 }
-
-//

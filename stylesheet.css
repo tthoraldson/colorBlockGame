@@ -1,15 +1,21 @@
 @charset "UTF-8";
 * {
 	background-color: #000;
+	color: white;
+	font-family: Arial;
 }
 
 h1 {
-	font-size: 3em;	
+	font-size: 3em;
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 0;
 }
 
 /* SECTIONS */
 header {
-	background-color: white;
+	
 }
 
 main {
@@ -21,7 +27,6 @@ footer {
 }
 
 button {
-	background-color: white;
 }
 /* CLASSES ==================================*/
 
@@ -29,7 +34,7 @@ button {
 	display: block;
 	float: left;
 	width: 20%;
-	height: 150px
+	height: 140px
 }
 
 /* IDs  =====================================*/
@@ -156,9 +161,3 @@ button {
 	background-color: black;
 }
 
-
-
-
-#correctColorDisplay{
-	background-color: white;
-}
