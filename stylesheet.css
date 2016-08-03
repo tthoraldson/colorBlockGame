@@ -1,4 +1,7 @@
 @charset "UTF-8";
+* {
+	background-color: #000;
+}
 
 h1 {
 	font-size: 3em;	
@@ -6,7 +9,7 @@ h1 {
 
 /* SECTIONS */
 header {
-	background-color: green;
+	background-color: white;
 }
 
 main {
@@ -17,17 +20,21 @@ footer {
 	background-color: yellow;
 }
 
-/* CLASSES */
+button {
+	background-color: white;
+}
+/* CLASSES ==================================*/
+
 .rectangle {
 	display: block;
+	float: left;
+	width: 20%;
+	height: 150px
 }
 
 /* IDs  =====================================*/
 /* ROW 1 */
 #row1 {
-	float: left;
-	width: 20%;
-	height: 20%;
 }
 
 #box11 {
@@ -35,7 +42,7 @@ footer {
 }
 
 #box12 {
-	
+	background-color: black;
 }
 
 #box13 {
@@ -43,7 +50,7 @@ footer {
 }
 
 #box14 {
-	
+	background-color: black;
 }
 
 #box15 {
@@ -53,9 +60,6 @@ footer {
 
 /* ROW 2 */
 #row2 {
-	float: left;
-	width: 20%;
-	height: 100px;
 }
 #box21 {
 	
@@ -66,7 +70,7 @@ footer {
 }
 
 #box23 {
-	
+	background-color: black;
 }
 
 #box24 {
@@ -74,15 +78,12 @@ footer {
 }
 
 #box25 {
-	
+	background-color: black;
 }
 
 
 /* ROW 3 */
 #row3 {
-	float: left;
-	width: 20%;
-	height: 20%;
 }
 
 #box31 {
@@ -90,7 +91,7 @@ footer {
 }
 
 #box32 {
-	
+	background-color: black;
 }
 
 #box33 {
@@ -98,7 +99,7 @@ footer {
 }
 
 #box34 {
-	
+	background-color: black;
 }
 
 #box35 {
@@ -108,13 +109,10 @@ footer {
 
 /* ROW 4 */
 #row4 {
-	float: left;
-	width: 20%;
-	height: 20%;
 }
 
 #box41 {
-	
+	background-color: black;
 }
 
 #box42 {
@@ -122,7 +120,7 @@ footer {
 }
 
 #box43 {
-	
+	background-color: black;
 }
 
 #box44 {
@@ -130,15 +128,12 @@ footer {
 }
 
 #box45 {
-	
+	background-color: black;
 }
 
 
 /* ROW 5 */
 #row5 {
-	float: left;
-	width: 20%;
-	height: 20%;
 }
 
 #box51 {
@@ -146,7 +141,7 @@ footer {
 }
 
 #box52 {
-	
+	background-color: black;
 }
 
 #box53 {
@@ -154,9 +149,16 @@ footer {
 }
 
 #box54 {
-	
+	background-color: black;
 }
 
 #box55 {
 	background-color: black;
+}
+
+
+
+
+#correctColorDisplay{
+	background-color: white;
 }
